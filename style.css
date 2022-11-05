@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 920px){
+    section, aside{
+    width: 100%;
+    }
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ea5c0ade;
+    clip-path: circle(50% at bottom right);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    position: relative;
+    max-width: 120px;  
+}
+header .navegar ul{
+    position: relative;
+    display: flex;
+}
+header .navegar li{
+    list-style: none;
+}
+
+header .navegar a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 100px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+header .navegar a:hover{
+    color: #ea5c0ade;
+    transform:  translateY(-10px);
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container .text{
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.container .text h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
+}
+
+.container .text h2 span{
+    font-size: 3.0em;
+    color: #ea5c0ade;
+    text-align: center;
+    align-items: center;
+}
+
+.container .text p{
+    color: #fff;
+}
+
+.container .text a{
+    display: inline-block;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #ea5c0ade;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+}
+
+.container .text a:hover{
+    transform:  translateY(-10px);
+}
+
+.icone{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone li{
+    list-style: none;
+}
+
+.icone li a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #222;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.icone li a:hover{
+    background: #ea5c0ade;
+    transform:  translateY(-10px);
+}
+
+.icone li a img{
+    transform: scale(1.0);
+    filter: invert(2);
+}
+
+.box-img{
+    position: absolute;
+   right: -8%;
+    bottom: -40px;
+}
+
+
+.box-img img{
+    width: 1220px;
+}
+
+.box-img .img1{
+transform: rotate(-5deg)
+}
+
+/* footer */
+
+#footer{
+    background: black;
+    color: white;
+    padding: 80px 0;
+}
+
+#footer .footer-content{
+    background: black;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu{
+margin: 0 40px;
+list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item{
+    margin: 25px 0;
+    transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover{
+    transform:  translateY(-10px);
+    color: #ea5c0ade;
+}
+
+#footer .footer-content .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+
+* footer social */
+.socials{
+    display: flex;
+
+}
+
+.socials i{
+    margin: 0 20px;
+    font-size: 1.7rem;
+}
+
+.socials i:hover{
+    transform:  translateY(-10px);
+    color: #ea5c0ade;
+}
+
+/* footer info*/
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+
+.footer-info .footer-info-items{
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item{
+    margin: 30px 10px;
+    transition: all 300ms ease;
+    
+
+}
+
+.footer-info .footer-info-items .footer-info-item:hover{
+    transform:  translateY(-10px);
+    color: #ea5c0ade;
+} 
+
+
+.footer-info .rights .country{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.footer-info .rights .country p {
+    transition: all 350ms ease;
+}
+
+.footer-info .rights .country p:hover{
+    color: var(--default-green)
+}
+
+.footer-info .rights .brazil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
