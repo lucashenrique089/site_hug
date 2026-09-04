@@ -4,109 +4,321 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="produto.html">
-    <title>HUG Sinta-se bem em ser quem você é</title>
+    <meta name="description" content="HUG — moda fitness e activewear para todos os corpos. Sinta-se bem em ser quem você é.">
+    <link rel="icon" href="IMG/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HUG — Sinta-se bem em ser quem você é</title>
 </head>
 <body>
-    <section>
-        <div class="circle">
-        </div>
-        <header>
-            <a href="#"><img src="IMG/logo.png" alt="logo" class="logo"></a>
-            <nav class="navegar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produto.html">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contatos</a></li>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="brand"><img src="IMG/logo.png" alt="HUG" class="brand__logo"></a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#home" class="nav__link is-active">Home</a></li>
+                    <li><a href="produto.html" class="nav__link">Produtos</a></li>
+                    <li><a href="index.html#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="index.html#contato" class="nav__link">Contato</a></li>
                 </ul>
             </nav>
-        </header>
-        <div class="container">
-            <div class="text">
-                <h2>Believe in your dreams <br> <span> SINTA-SE BEM EM SER QUEM VOCÊ É...</span></h2>
-                <p> A HUG QUER INCENTIVAR PESSOAS QUE INDEPENDENTE DO CORPO, QUEREM REALIZAR SEUS SONHOS.<br> TODOS PODEM SE SENTIR BEM E SE VESTIR BEM INDEPENDENTE DO TAMANHO.</p>
-                <a href="produto.html">VIEW ALL PRODUCTS</a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="hero__blob" aria-hidden="true"></div>
+            <div class="hero__inner container">
+                <div class="hero__content reveal">
+                    <p class="eyebrow">Activewear sem tamanho único</p>
+                    <h1 class="hero__title">Believe in your dreams
+                        <span>Sinta-se bem em ser quem você é</span>
+                    </h1>
+                    <p class="hero__text">A HUG nasceu para incentivar pessoas que, independente do corpo, querem se mover, treinar e realizar seus sonhos. Todo mundo pode suar a camisa e se vestir bem — do jeito que for.</p>
+                    <div class="hero__actions">
+                        <a href="produto.html" class="btn btn--primary">Ver coleção</a>
+                        <a href="#sobre" class="btn btn--ghost">Conheça a HUG</a>
+                    </div>
+                    <ul class="social-list" aria-label="Redes sociais da HUG">
+                        <li>
+                            <a href="#" aria-label="HUG no Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="HUG no X (Twitter)">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="HUG no Facebook">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero__media reveal">
+                    <img src="IMG/imagem para o site final.png" alt="Duas mulheres sorrindo, vestindo top e legging HUG" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <span>CORPO LIVRE</span><span>•</span>
+                <span>AUTOESTIMA</span><span>•</span>
+                <span>MOVA-SE DO SEU JEITO</span><span>•</span>
+                <span>MODA PARA TODOS OS CORPOS</span><span>•</span>
+                <span>CORPO LIVRE</span><span>•</span>
+                <span>AUTOESTIMA</span><span>•</span>
+                <span>MOVA-SE DO SEU JEITO</span><span>•</span>
+                <span>MODA PARA TODOS OS CORPOS</span><span>•</span>
             </div>
         </div>
 
-        <ul class="icone">
-            <li><a href="#"><img src="IMG/instagram.png" alt="icone-logo"></a></li>
-            <li><a href="#"><img src="IMG/twitter.png" alt="icone-logo"></a></li>
-            <li><a href="#"><img src="IMG/facebook.png" alt="icone-logo"></a></li>
-            
-        </ul>
-        <div class="box-img">
-            <img src="IMG/imagem para o site final.png" alt="" class="img1">
-        </div>
+        <section class="values" id="valores">
+            <div class="container">
+                <h2 class="section-title reveal">Por que vestir HUG</h2>
 
-    </section>
+                <div class="values__grid">
+                    <div class="value-card reveal">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 21v-2a5 5 0 0 1 5-5h2M14 14h2a5 5 0 0 1 5 5v2"/></svg>
+                        </div>
+                        <h3>Diversidade de tamanhos</h3>
+                        <p>Do PP ao G6, modelagens pensadas de verdade para corpos reais — sem "ajustar" ninguém.</p>
+                    </div>
 
-    <footer id="footer">
-        <div class="footer-content">
-            <img src="logo.png" alt="" class="logo">
-            <ul class="footer-menu">
-                <p>Empresa</p>
-                <li class="footer-menu-item">
-                    Visão
-                </li>
-                <li class="footer-menu-item">
-                    Missão
-                </li>
-                <li class="footer-menu-item">
-                    Valores
-                </li>
-            </ul>
+                    <div class="value-card reveal">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 13a5 5 0 0 1 9-3 5 5 0 0 1 7 4c0 3-4 6-8 9-4-3-8-6-8-9z"/></svg>
+                        </div>
+                        <h3>Conforto pra se mover</h3>
+                        <p>Tecidos com elasticidade e respirabilidade para treinar, dançar e viver sem apertar.</p>
+                    </div>
 
-            <ul class="footer-menu">
-                <p>Comunidades</p>
-                <li class="footer-menu-item">
-                    Para Artistas
-                </li>
-                <li class="footer-menu-item">
-                    Desenvolvedores
-                </li>
-                <li class="footer-menu-item">
-                    Influenciadores
-                </li>
-                <li class="footer-menu-item">
-                    Investidores
-                </li>
-                <li class="footer-menu-item">
-                    Fornecedores
-                </li>
-            </ul>
+                    <div class="value-card reveal">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-9.5-9C.7 8 2.7 4 6.5 4c2 0 3.5 1.2 4.5 2.5C12 5.2 13.5 4 15.5 4 19.3 4 21.3 8 19.5 12 17 16.6 12 21 12 21z"/></svg>
+                        </div>
+                        <h3>Autoestima em alta</h3>
+                        <p>Peças pensadas para você se olhar no espelho e ver exatamente quem você é: incrível.</p>
+                    </div>
 
-            <ul class="footer-menu">
-                <p>Links úteis</p>
-                <li class="footer-menu-item">
-                   Ajuda
-                </li>
-                <li class="footer-menu-item">
-                    Suporte
-                </li>
-                <li class="footer-menu-item">
-                    Aplicativo móvel grátis(EM BREVE)
-                </li>
-            </ul>
-
-        </div>
-
-        <div class="footer-info">
-            <ul class="footer-info-items">
-                <li class="footer-info-item">Legal</li>
-                <li class="footer-info-item">Centro de Privacidade</li>
-                <li class="footer-info-item">Política de privacidade</li>
-                <li class="footer-info-item">Cookies</li>
-                <li class="footer-info-item">Sobre anúncios</li>
-            </ul>
-
-            <div class="rights">
-                <div class="country">
-                    <p>Brasil</p>
-                    <img src="IMG/brazil.png" alt="" class="brazil-flag" />
+                    <div class="value-card reveal">
+                        <div class="value-card__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+                        </div>
+                        <h3>Comunidade que apoia</h3>
+                        <p>Um movimento de pessoas reais incentivando pessoas reais a realizar seus sonhos.</p>
+                    </div>
                 </div>
-                <p>&copy; HUG 2023</p>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container about__inner">
+                <div class="about__media reveal">
+                    <img src="IMG/imagem para o site 03.png" alt="Mulher sorrindo durante treino, vestindo peças HUG" loading="lazy">
+                </div>
+                <div class="about__content reveal">
+                    <p class="eyebrow">Nossa história</p>
+                    <h2 class="section-title">Moda e movimento para todo corpo</h2>
+                    <p>A HUG começou como um projeto de pesquisa na faculdade: por que a moda fitness ainda trata corpos plus size como exceção? A resposta virou uma marca — pensada por quem estuda, treina e vive isso todos os dias.</p>
+                    <p>Aqui, cada coleção é desenhada para acompanhar o seu movimento, não para limitá-lo. Sem tamanho único, sem corpo padrão. Só gente se sentindo bem em ser quem é.</p>
+                    <a href="produto.html" class="btn btn--primary">Conhecer os produtos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured" id="colecao">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Coleção em destaque</h2>
+                    <a href="produto.html" class="link-arrow">Ver todos os produtos →</a>
+                </div>
+
+                <div class="featured__grid">
+                    <a class="feature-card reveal" href="produto.html#produto-abraco">
+                        <div class="feature-card__media">
+                            <img src="IMG/imagem para o site 01.png" alt="Conjunto Fitness Abraço" loading="lazy">
+                        </div>
+                        <div class="feature-card__body">
+                            <h3>Conjunto Fitness Abraço</h3>
+                            <span class="price">R$ 259,90</span>
+                        </div>
+                    </a>
+
+                    <a class="feature-card reveal" href="produto.html#produto-neon">
+                        <div class="feature-card__media">
+                            <img src="IMG/imagem para o site 04.png" alt="Regata Neon Training" loading="lazy">
+                        </div>
+                        <div class="feature-card__body">
+                            <h3>Regata Neon Training</h3>
+                            <span class="price">R$ 279,90</span>
+                        </div>
+                    </a>
+
+                    <a class="feature-card reveal" href="produto.html#produto-verao">
+                        <div class="feature-card__media">
+                            <img src="IMG/imagem para o site 06.png" alt="Body Verão Turquesa" loading="lazy">
+                        </div>
+                        <div class="feature-card__body">
+                            <h3>Body Verão Turquesa</h3>
+                            <span class="price">R$ 219,90</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="depoimentos">
+            <div class="container">
+                <h2 class="section-title reveal">Quem veste, aprova</h2>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-card__stars" aria-hidden="true">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                        </div>
+                        <p>"Primeira vez que comprei roupa de treino e não precisei pensar duas vezes sobre o tamanho. Simplesmente serviu e ficou linda."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">MS</div>
+                            <div>
+                                <strong>Marina Souza</strong>
+                                <span>Aluna de Educação Física</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-card__stars" aria-hidden="true">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                        </div>
+                        <p>"Amo que as fotos mostram gente de verdade, com corpo de verdade. Já indiquei pra todo mundo do meu box."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">CD</div>
+                            <div>
+                                <strong>Camila Duarte</strong>
+                                <span>Personal trainer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-card__stars" aria-hidden="true">
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L10 15l-5.6 3 1.4-6.2L1 7.5l6.4-.6z"/></svg>
+                        </div>
+                        <p>"O body de verão ficou perfeito pra minha viagem. Comprei sem medo porque o site já mostrou em corpos parecidos com o meu."</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">BL</div>
+                            <div>
+                                <strong>Beatriz Lima</strong>
+                                <span>Cliente HUG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container newsletter__inner reveal">
+                <div>
+                    <h2>Fique por dentro dos lançamentos</h2>
+                    <p>Novidades, promoções e conteúdo sobre autoestima direto no seu e-mail.</p>
+                </div>
+                <form class="newsletter__form" id="newsletterForm" novalidate>
+                    <label class="sr-only" for="newsletterEmail">Seu e-mail</label>
+                    <input type="email" id="newsletterEmail" placeholder="seu@email.com" required>
+                    <button type="submit" class="btn btn--primary">Quero receber</button>
+                    <p class="newsletter__feedback" id="newsletterFeedback" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="IMG/logo.png" alt="HUG" class="footer-brand__logo">
+                    <p>Moda fitness inclusiva para todos os corpos. Sinta-se bem em ser quem você é.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="HUG no Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                        </a>
+                        <a href="#" aria-label="HUG no X (Twitter)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                        </a>
+                        <a href="#" aria-label="HUG no Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-menu">
+                    <p>Empresa</p>
+                    <li class="footer-menu-item"><a href="#sobre">Visão</a></li>
+                    <li class="footer-menu-item"><a href="#sobre">Missão</a></li>
+                    <li class="footer-menu-item"><a href="#valores">Valores</a></li>
+                </ul>
+
+                <ul class="footer-menu">
+                    <p>Comunidade</p>
+                    <li class="footer-menu-item"><a href="#depoimentos">Depoimentos</a></li>
+                    <li class="footer-menu-item"><a href="produto.html">Coleções</a></li>
+                    <li class="footer-menu-item"><a href="#">Influenciadoras</a></li>
+                    <li class="footer-menu-item"><a href="#">Fornecedores</a></li>
+                </ul>
+
+                <ul class="footer-menu">
+                    <p>Links úteis</p>
+                    <li class="footer-menu-item"><a href="#">Ajuda</a></li>
+                    <li class="footer-menu-item"><a href="#">Suporte</a></li>
+                    <li class="footer-menu-item"><a href="#">Aplicativo móvel (em breve)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <ul class="footer-info-items">
+                    <li class="footer-info-item"><a href="#">Legal</a></li>
+                    <li class="footer-info-item"><a href="#">Centro de Privacidade</a></li>
+                    <li class="footer-info-item"><a href="#">Política de privacidade</a></li>
+                    <li class="footer-info-item"><a href="#">Cookies</a></li>
+                    <li class="footer-info-item"><a href="#">Sobre anúncios</a></li>
+                </ul>
+
+                <div class="rights">
+                    <span>&copy; HUG <span id="currentYear">2026</span> · Brasil</span>
+                    <img src="IMG/brazil.png" alt="Bandeira do Brasil" class="brazil-flag">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

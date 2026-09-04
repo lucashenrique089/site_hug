@@ -1,52 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="produto.css">
-    <title>Nossa Loja</title>
+    <meta name="description" content="Loja HUG — activewear e moda fitness inclusiva, do PP ao G6.">
+    <link rel="icon" href="IMG/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produto.css">
+    <title>HUG — Nossa Loja</title>
 </head>
 <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <div class="container">
-        <div class="card card-yellow">
-          <img class="logo" src="IMG/logo.png" />
-          <h2 class="title"><br><br></h2>
-          <img class="product" src="IMG/imagem para o site 01.png">
-          <div class="price">
-            <h4>R$ 250,00</h3>            
-          </div>        
-          <div class="button-right">
-            <button>COMPRAR</button>
-          </div>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html" class="brand"><img src="IMG/logo.png" alt="HUG" class="brand__logo"></a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li><a href="produto.html" class="nav__link is-active" aria-current="page">Produtos</a></li>
+                    <li><a href="index.html#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="index.html#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
+    </header>
 
-          <div class="card card-red">
-            <img class="logo" src="IMG/logo.png" />
-            <h2 class="title"><br><br> </h2>
-            <img class="product" src="IMG/imagem para o site 05.png">
-            <div class="price">
-              <h4>R$ 250,00</h3>            
-            </div>        
-            <div class="button-right">
-              <button>COMPRAR</button>
+    <main id="main">
+        <section class="shop-hero">
+            <div class="container">
+                <p class="eyebrow">Loja HUG</p>
+                <h1>Vista o seu jeito de ser</h1>
+                <p>Peças pensadas para todos os tamanhos treinarem, curtirem o verão e viverem com autoestima — do PP ao G6.</p>
             </div>
-          </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="shop__toolbar">
+                    <div class="filters" role="group" aria-label="Filtrar por categoria">
+                        <button class="filter-chip is-active" type="button" data-filter="todos">Todos</button>
+                        <button class="filter-chip" type="button" data-filter="treino">Treino</button>
+                        <button class="filter-chip" type="button" data-filter="praia">Praia</button>
+                        <button class="filter-chip" type="button" data-filter="essenciais">Essenciais</button>
+                    </div>
+
+                    <button class="cart-btn" id="cartBtn" type="button" aria-label="Ver sacola de compras">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+                        <span class="cart-btn__count" id="cartCount">0</span>
+                    </button>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <article class="product-card" id="produto-abraco" data-category="treino">
+                        <span class="badge">Mais vendido</span>
+                        <div class="product-card__media">
+                            <img src="IMG/imagem para o site 01.png" alt="Conjunto Fitness Abraço em um dos modelos disponíveis" class="product-card__img" loading="lazy">
+                        </div>
+                        <div class="product-card__swatches">
+                            <button class="swatch is-active" type="button" style="background-image: url('IMG/imagem para o site 01.png')" data-img="IMG/imagem para o site 01.png" aria-label="Ver Conjunto Fitness Abraço - corpo 1"></button>
+                            <button class="swatch" type="button" style="background-image: url('IMG/imagem para o site 02.png')" data-img="IMG/imagem para o site 02.png" aria-label="Ver Conjunto Fitness Abraço - corpo 2"></button>
+                        </div>
+                        <div class="product-card__body">
+                            <img class="product-card__logo" src="IMG/logo.png" alt="">
+                            <h3 class="product-card__title">Conjunto Fitness Abraço</h3>
+                            <p class="product-card__desc">Top + legging em compressão macia. A mesma peça, em corpos diferentes — porque HUG é pra todo mundo.</p>
+                            <div class="product-card__footer">
+                                <span class="price">R$ 259,90</span>
+                                <button class="btn btn--small btn--primary add-to-cart" type="button" data-name="Conjunto Fitness Abraço">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="produto-retro" data-category="treino">
+                        <div class="product-card__media">
+                            <img src="IMG/imagem para o site 03.png" alt="Conjunto Retro Energy" class="product-card__img" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <img class="product-card__logo" src="IMG/logo.png" alt="">
+                            <h3 class="product-card__title">Conjunto Retro Energy</h3>
+                            <p class="product-card__desc">Top, legging e polaina em referência aos treinos aeróbicos old school, com conforto atual.</p>
+                            <div class="product-card__footer">
+                                <span class="price">R$ 239,90</span>
+                                <button class="btn btn--small btn--primary add-to-cart" type="button" data-name="Conjunto Retro Energy">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="produto-neon" data-category="treino">
+                        <span class="badge">Novo</span>
+                        <div class="product-card__media">
+                            <img src="IMG/imagem para o site 04.png" alt="Regata Neon Training" class="product-card__img" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <img class="product-card__logo" src="IMG/logo.png" alt="">
+                            <h3 class="product-card__title">Regata Neon Training</h3>
+                            <p class="product-card__desc">Regata + legging capri em tons neon, feita para treinos de alta intensidade.</p>
+                            <div class="product-card__footer">
+                                <span class="price">R$ 279,90</span>
+                                <button class="btn btn--small btn--primary add-to-cart" type="button" data-name="Regata Neon Training">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="produto-essential" data-category="essenciais">
+                        <div class="product-card__media">
+                            <img src="IMG/imagem para o site 05.png" alt="Top Fitness Essential" class="product-card__img" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <img class="product-card__logo" src="IMG/logo.png" alt="">
+                            <h3 class="product-card__title">Top Fitness Essential</h3>
+                            <p class="product-card__desc">O básico que não pode faltar: top de sustentação média para o dia a dia de treino.</p>
+                            <div class="product-card__footer">
+                                <span class="price">R$ 149,90</span>
+                                <button class="btn btn--small btn--primary add-to-cart" type="button" data-name="Top Fitness Essential">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="produto-verao" data-category="praia">
+                        <div class="product-card__media">
+                            <img src="IMG/imagem para o site 06.png" alt="Body Verão Turquesa" class="product-card__img" loading="lazy">
+                        </div>
+                        <div class="product-card__body">
+                            <img class="product-card__logo" src="IMG/logo.png" alt="">
+                            <h3 class="product-card__title">Body Verão Turquesa</h3>
+                            <p class="product-card__desc">Body com viseira combinando, perfeito pra praia, piscina ou treino ao ar livre.</p>
+                            <div class="product-card__footer">
+                                <span class="price">R$ 219,90</span>
+                                <button class="btn btn--small btn--primary add-to-cart" type="button" data-name="Body Verão Turquesa">Comprar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="IMG/logo.png" alt="HUG" class="footer-brand__logo">
+                    <p>Moda fitness inclusiva para todos os corpos. Sinta-se bem em ser quem você é.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="HUG no Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                        </a>
+                        <a href="#" aria-label="HUG no X (Twitter)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                        </a>
+                        <a href="#" aria-label="HUG no Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="footer-menu">
+                    <p>Empresa</p>
+                    <li class="footer-menu-item"><a href="index.html#sobre">Visão</a></li>
+                    <li class="footer-menu-item"><a href="index.html#sobre">Missão</a></li>
+                    <li class="footer-menu-item"><a href="index.html#valores">Valores</a></li>
+                </ul>
+
+                <ul class="footer-menu">
+                    <p>Comunidade</p>
+                    <li class="footer-menu-item"><a href="index.html#depoimentos">Depoimentos</a></li>
+                    <li class="footer-menu-item"><a href="produto.html">Coleções</a></li>
+                    <li class="footer-menu-item"><a href="#">Influenciadoras</a></li>
+                    <li class="footer-menu-item"><a href="#">Fornecedores</a></li>
+                </ul>
+
+                <ul class="footer-menu">
+                    <p>Links úteis</p>
+                    <li class="footer-menu-item"><a href="#">Ajuda</a></li>
+                    <li class="footer-menu-item"><a href="#">Suporte</a></li>
+                    <li class="footer-menu-item"><a href="#">Aplicativo móvel (em breve)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <ul class="footer-info-items">
+                    <li class="footer-info-item"><a href="#">Legal</a></li>
+                    <li class="footer-info-item"><a href="#">Centro de Privacidade</a></li>
+                    <li class="footer-info-item"><a href="#">Política de privacidade</a></li>
+                    <li class="footer-info-item"><a href="#">Cookies</a></li>
+                    <li class="footer-info-item"><a href="#">Sobre anúncios</a></li>
+                </ul>
+
+                <div class="rights">
+                    <span>&copy; HUG <span id="currentYear">2026</span> · Brasil</span>
+                    <img src="IMG/brazil.png" alt="Bandeira do Brasil" class="brazil-flag">
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <div class="card card-blue">
-            <img class="logo" src="IMG/logo.png" />
-            <h2 class="title"><br><br></h2>
-            <img class="product" src="IMG/imagem para o site 06.png">
-            <div class="price">
-              <h4>R$ 250,00</h3>            
-            </div>        
-            <div class="button-right">
-              <button>COMPRAR</button>
-            </div>
-          </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-          
+    <script src="js/main.js"></script>
 </body>
 </html>
